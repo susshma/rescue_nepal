@@ -11,14 +11,14 @@ Install Cordova
 
 To install Cordova, make sure you have Node.js installed, then run
 
-$ sudo npm install -g cordova
+<strong>$ sudo npm install -g cordova</strong><br/>
 Drop sudo from the above command if running on Windows.
 
 Install Ionic
 
 To install Ionic, simply run:
 
-$ sudo npm install -g ionic
+<strong>$ sudo npm install -g ionic</strong><br/>
 Configure iOS and Android platforms
 
 Now, we need to tell ionic that we want to enable the iOS and Android platforms.
@@ -33,15 +33,15 @@ Test it out
 
 Just to make sure the project setup works, try building and running the projects:
 
-ionic build ios
-ionic emulate ios
-Substitute ios for android to build for Android instead.
+<strong>ionic build ios</strong><br/>
+<strong>ionic emulate ios</strong><br/>
+<strong>Substitute ios for android to build for Android instead.
 
 View it in your browser
 
 If you want to view the app in your regular browser, you can use the following command:
 
-ionic serve
+<strong>ionic serve</strong>
 Documentation
 
 For more detailed instructions on Ionic, you may find the guide here: All About Ionic
