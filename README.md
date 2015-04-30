@@ -35,7 +35,7 @@ Just to make sure the project setup works, try building and running the projects
 
 <strong>ionic build ios</strong><br/>
 <strong>ionic emulate ios</strong><br/>
-<strong>Substitute ios for android to build for Android instead.
+Substitute ios for android to build for Android instead.
 
 View it in your browser
 
