@@ -1,4 +1,4 @@
-# rescue_nepal
+# Rescue Nepal
 Opensource project for relief efforts in Nepal earthquake
 
 In order for this to work like an actual apps on emulator or testing device, we need to install the following packages.
