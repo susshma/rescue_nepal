@@ -1,49 +1,77 @@
 # Rescue Nepal
-Opensource project for relief efforts in Nepal earthquake
+============
+Git clone this repo to your local machine in the folder where you normally keep
+the projects.
 
-In order for this to work like an actual apps on emulator or testing device, we need to install the following packages.
+Go to "rescue_nepal" folder which you just cloned and follow the steps below.
 
-Install Dependencies, make sure you install all the dependencies needed to run this project. In your working directory, run:
+## Installation
 
-npm install
+In order for this to work like an actual apps on emulator or testing device, we
+need to install the following packages.
 
-Install Cordova
+### Install Dependencies
+
+Make sure you install all the dependencies needed to run this project.
+In your working directory, run:
+
+`npm install`
+
+
+### Install Cordova
 
 To install Cordova, make sure you have Node.js installed, then run
 
-<strong>$ sudo npm install -g cordova</strong><br/>
+```
+$ sudo npm install -g cordova
+```
+
 Drop sudo from the above command if running on Windows.
 
-Install Ionic
+### Install Ionic
 
 To install Ionic, simply run:
 
-<strong>$ sudo npm install -g ionic</strong><br/>
-Configure iOS and Android platforms
+```
+$ sudo npm install -g ionic
+```
+
+### Configure iOS and Android platforms
 
 Now, we need to tell ionic that we want to enable the iOS and Android platforms.
 
 Run the following commands in the working directory:
 
+```
 ionic platform ios
+```
+```
 ionic platform android
-These will create the packages needed to emulate the app on your emulator or testing devices (iOS and Android).
+```
 
-Test it out
+These will create the packages needed to emulate the app on your emulator or
+testing devices (iOS and Android).
 
+### Test it out
 Just to make sure the project setup works, try building and running the projects:
 
-<strong>ionic build ios</strong><br/>
-<strong>ionic emulate ios</strong><br/>
+```
+ionic build ios
+```
+```
+ionic emulate ios
+```
 Substitute ios for android to build for Android instead.
 
-View it in your browser
+### View it in your browser
 
-If you want to view the app in your regular browser, you can use the following command:
+If you want to view the app in your regular browser, you can use the following
+command:
 
-<strong>ionic serve</strong>
-Documentation
+```
+ionic serve
+```
 
-For more detailed instructions on Ionic, you may find the guide here: All About Ionic
-
-For more detailed instructions on Tracksuit, you may find the guide here: DT Tracksuit
+## Documentation
+For more detailed instructions on Ionic, you may find the guide here:
+[All About Ionic](http://ionicframework.com/docs/guide/preface.html)
