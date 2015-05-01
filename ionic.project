@@ -1,4 +1,12 @@
 {
-  "name": "rescue_nepal",
-  "app_id": ""
+  "name": "Rescue Nepal",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }

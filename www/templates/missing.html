@@ -1,0 +1,19 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <div class="row-fluid">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+            <div class="tile">
+                <span class="title">{{ playlist.name }}{{ playlist.gender }}</span>
+                <div class="pull-right image"><img width="100px" src="img/people/img.jpg" /></div>
+                <div class="clear"></div>
+                Description: <span class="pull-right">{{ playlist.description }}</span><br/>
+                <div class="clear"></div>
+                Country: <span class="pull-right">{{ playlist.country }}</span><br/>
+                <div class="clear"></div>
+                Last seen on: <span></span><br/>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

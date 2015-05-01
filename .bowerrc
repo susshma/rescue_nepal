@@ -1,3 +1,5 @@
-{
-  "directory": "www/lib"
+{ 
+    "directory": "www/lib",
+    "proxy": "http://sushma.sharma:DTpass34@192.168.90.226:8080",
+    "https-proxy": "http://sushma.sharma:34pass123@192.168.90.226:8080"
 }

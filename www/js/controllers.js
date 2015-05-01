@@ -1,6 +1,4 @@
-angular.module('starter.controllers', [])
-
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+rescue.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
   $scope.loginData = {};
 
@@ -33,16 +31,16 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+.controller('MissingCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { name: 'Reggae', id: 1, description: 'Tall dark brown', gender: '', country: '', details: '', img: 'test.jpg' },
+    { name: 'Reggae', id: 2, description: 'Tall dark brown', gender: '', country: '', details: '', img: 'test.jpg' },
+    { name: 'Reggae', id: 3, description: 'Tall dark brown', gender: '', country: '', details: '', img: 'test.jpg' },
+    { name: 'Reggae', id: 4, description: 'Tall dark brown', gender: '', country: '', details: '', img: 'test.jpg' },
+    { name: 'Reggae', id: 5, description: 'Tall dark brown', gender: '', country: '', details: '', img: 'test.jpg' },
+    { name: 'Reggae', id: 6, description: 'Tall dark brown', gender: '', country: '', details: '', img: 'test.jpg' },
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('MissingDetailstCtrl', function($scope, $stateParams) {
 });
