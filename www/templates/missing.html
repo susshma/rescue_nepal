@@ -1,18 +1,40 @@
-<ion-view view-title="Playlists">
+<ion-view view-title="Missing People">
   <ion-content>
     <div class="row-fluid">
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-            <div class="tile">
-                <span class="title">{{ playlist.name }}{{ playlist.gender }}</span>
-                <div class="pull-right image"><img width="100px" src="img/people/img.jpg" /></div>
-                <div class="clear"></div>
-                Description: <span class="pull-right">{{ playlist.description }}</span><br/>
-                <div class="clear"></div>
-                Country: <span class="pull-right">{{ playlist.country }}</span><br/>
-                <div class="clear"></div>
-                Last seen on: <span></span><br/>
-                <div class="clear"></div>
+        <div class="col-lg-12">
+            <a href="#/app/missing/create">
+                <span class="ion-plus-circled menu-icon"> Add New</span>
+            </a>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="form-group">
+            <div class="col-sm-12">
+                <input type="text" class="form-control" id="firstname" placeholder="search" ng-model="searchString">
             </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-repeat="playlist in missingList| searchFor:searchString" class="row" ng-animate="'animate'">
+            <a href="#/app/details/{{playlist.id}}">
+                <div class="tile">
+                    <span class="title">{{ playlist.name }}{{ playlist.gender }}</span>
+                    <div class="pull-right image"><img width="100px" src="img/people/img.jpg" /></div>
+                    <div class="clear"></div>
+                    Nationality: <span>{{ playlist.description }}</span><br/>
+                    <div class="clear"></div>
+                    Last location: <span>{{ playlist.country }}</span><br/>
+                    <div class="clear"></div>
+                    City: <span></span><br/>
+                    <div class="clear"></div>
+                    Phone: <span></span><br/>
+                    <div class="clear"></div>
+                    Description: <span></span><br/>
+                    <div class="clear"></div>
+                    Email Address: <span></span><br/>
+                    <div class="clear"></div>
+                </div>
+            </a>
         </div>
     </div>
   </ion-content>

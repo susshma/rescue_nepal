@@ -29,7 +29,15 @@ var rescue = angular.module('rescue', ['ionic'])
     templateUrl: "templates/menu.html",
     controller: 'AppCtrl'
   })
-
+  .state('app.home', {
+    url: "/home",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/home.html",
+        controller: 'MissingCtrl'
+      }
+    }
+  })
   .state('app.missing', {
     url: "/missing",
     views: {
@@ -48,7 +56,68 @@ var rescue = angular.module('rescue', ['ionic'])
         controller: 'MissingDetailstCtrl'
       }
     }
-  });
+  })
+  .state('app.volunteer', {
+    url: "/volunteer",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/volunteer.html",
+        controller: 'VolunteerCtrl'
+      }
+    }
+  })
+  .state('app.volunteerdetails', {
+    url: "/volunteerdetails/:volunteerId",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/missing.html",
+        controller: 'VolunteerDetailsCtrl'
+      }
+    }
+  })
+  .state('app.createVolunteer', {
+    url: "/volunteer/create",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/createVolunteer.html",
+        controller: 'CreateVolunteerCtrl'
+      }
+    }
+  })
+  .state('app.createMissing', {
+    url: "/missing/create",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/createMissing.html",
+        controller: 'CreateMissingCtrl'
+      }
+    }
+  })
+  .state('app.governmentcontacts', {
+    url: "/governmentcontacts",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/commonlist.html",
+        controller: 'GovernmentContactsCtrl'
+      }
+    }
+  })
+  .state('app.medicalsites', {
+    url: "/medicalsites",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/commonlist.html",
+        controller: 'MedicalSitesCtrl'
+      }
+    }
+  })
+  ;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/missing');
-});
+  $urlRouterProvider.otherwise('/app/home');
+})
+
+.controller('AppCtrl', ['$scope', '$ionicSideMenuDelegate',function($scope, $ionicHistory) {
+  $scope.myGoBack = function() {
+    $ionicHistory.goBack();
+  };
+}]);
