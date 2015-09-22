@@ -1,5 +1,19 @@
-<ion-view view-title="Playlist">
+<ion-view view-title="Missing People">
   <ion-content>
-    <h1>Playlist</h1>
+    <div class="row-fluid">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="tile">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+            <div ng-repeat="comment in comments">
+                <div class="tile">
+                    {{ comment.name }}
+                    {{ comment.phone }}
+                    {{ comment.comment }}
+                </div>
+            </div>
+        </div>
+    </div>
   </ion-content>
 </ion-view>
